@@ -4,6 +4,7 @@
 
 ```bash
 docker network create docker-canary
+docker network create -d overlay --attachable docker-canary
 docker pull nginx:latest
 docker pull python:latest
 ```
